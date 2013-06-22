@@ -1,0 +1,401 @@
+./common/environment.c:#if defined(CONFIG_BOOTARGS)
+./common/environment.c:	"bootargs="	CONFIG_BOOTARGS			"\0"
+./common/env_common.c:#ifdef	CONFIG_BOOTARGS
+./common/env_common.c:	"bootargs="	CONFIG_BOOTARGS			"\0"
+./tmp10:/*#define CONFIG_BOOTARGS    	"root=ramfs devfs=mount conso	/*#define CONFIG_BOOTARGS    	"root=ramfs devfs=mount conso
+./CHANGELOG:    This patch adapts CONFIG_BOOTARGS to the chosen boot method (boot from
+./CHANGELOG:    This patch adapts CONFIG_BOOTARGS to the chosen boot method (boot from
+./CHANGELOG:    Also define CONFIG_BOOTARGS to something more useful, define
+./CHANGELOG:      and fix the CONFIG_BOOTARGS macro.
+./include/configs/MPC8360ERDK.h:#undef	CONFIG_BOOTARGS		/* the boot command will set bootargs */
+./include/configs/bf533-ezkit.h:/* #define CONFIG_BOOTARGS		"root=/dev/mtdblock0 rw" */
+./include/configs/bf533-ezkit.h:#define CONFIG_BOOTARGS "root=/dev/mtdblock0 ip=192.168.0.15:192.168.0.2:192.168.0.1:255.255.255.0:ezkit:eth0:off console=ttyBF0,57600"
+./include/configs/SCM.h:#undef	CONFIG_BOOTARGS
+./include/configs/M54455EVB.h:#	define CONFIG_BOOTARGS		"root=/dev/mtdblock1 rw rootfstype=jffs2 ip=none mtdparts=physmap-flash.0:5M(kernel)ro,-(jffs2)"
+./include/configs/at91sam9260ek.h:#define CONFIG_BOOTARGS		"console=ttyS0,115200 "			\
+./include/configs/at91sam9260ek.h:#define CONFIG_BOOTARGS		"console=ttyS0,115200 "			\
+./include/configs/at91sam9260ek.h:#define CONFIG_BOOTARGS		"console=ttyS0,115200 "			\
+./include/configs/smdkc110d.h:/*#define CONFIG_BOOTARGS    	"root=ramfs devfs=mount console=ttySA0,9600" */
+./include/configs/aev.h:#undef	CONFIG_BOOTARGS
+./include/configs/ETX094.h:#undef	CONFIG_BOOTARGS
+./include/configs/MPC8540EVAL.h:#define CONFIG_BOOTARGS	"root=/dev/ram rw console=ttyS0,115200"
+./include/configs/TK885D.h:#undef	CONFIG_BOOTARGS
+./include/configs/mpc7448hpc2.h:#undef CONFIG_BOOTARGS
+./include/configs/mpc7448hpc2.h:#define CONFIG_BOOTARGS "console=ttyS0,115200"
+./include/configs/smdkv210onenand.h:/*#define CONFIG_BOOTARGS    	"root=ramfs devfs=mount console=ttySA0,9600" */
+./include/configs/CANBT.h:#undef	CONFIG_BOOTARGS
+./include/configs/VoVPN-GW.h:#undef  CONFIG_BOOTARGS
+./include/configs/pdnb3.h:#undef	CONFIG_BOOTARGS
+./include/configs/CPCI405.h:#undef	CONFIG_BOOTARGS
+./include/configs/mcc200.h:#undef	CONFIG_BOOTARGS
+./include/configs/TQM862L.h:#undef	CONFIG_BOOTARGS
+./include/configs/OCRTC.h:#undef	CONFIG_BOOTARGS
+./include/configs/uc100.h:#undef	CONFIG_BOOTARGS
+./include/configs/at91sam9263ek.h:#define CONFIG_BOOTARGS		"console=ttyS0,115200 " \
+./include/configs/at91sam9263ek.h:#define CONFIG_BOOTARGS		"console=ttyS0,115200 " \
+./include/configs/cmi_mpc5xx.h:#define CONFIG_BOOTARGS		""		/* Assuming OS Image in 4 flash sector at offset 4004 */
+./include/configs/NETVIA.h:#undef	CONFIG_BOOTARGS
+./include/configs/hcu4.h:#undef	CONFIG_BOOTARGS
+./include/configs/PATI.h:#define CONFIG_BOOTARGS		""		/* */
+./include/configs/ML2.h:#define CONFIG_BOOTARGS		"root=/dev/nfs "                        \
+./include/configs/ML2.h:#define CONFIG_BOOTARGS		"root=/dev/mtdblock2 "			\
+./include/configs/atstk1004.h:#define CONFIG_BOOTARGS							\
+./include/configs/lwmon5.h:#undef	CONFIG_BOOTARGS
+./include/configs/TOP5200.h:#undef	CONFIG_BOOTARGS
+./include/configs/gr_cpci_ax2000.h:#undef	CONFIG_BOOTARGS
+./include/configs/SBC8540.h:#define CONFIG_BOOTARGS "root=/dev/nfs rw nfsroot=192.168.0.251:/tftpboot ip=192.168.0.105:192.168.0.251::255.255.255.0:sbc8560:eth0:off console=ttyS0,9600"
+./include/configs/SBC8540.h:/*#define CONFIG_BOOTARGS      "root=/dev/ram rw console=ttyS0,115200"*/
+./include/configs/BC3450.h:#undef	CONFIG_BOOTARGS
+./include/configs/zylonite.h:#define CONFIG_BOOTARGS		"root=/dev/mtdblock2 rootfstype=cramfs console=ttyS0,115200"
+./include/configs/korat.h:#undef	CONFIG_BOOTARGS
+./include/configs/TQM862M.h:#undef	CONFIG_BOOTARGS
+./include/configs/canmb.h:#undef	CONFIG_BOOTARGS
+./include/configs/PM854.h:#undef	CONFIG_BOOTARGS		/* the boot command will set bootargs */
+./include/configs/bf561-ezkit.h:#define CONFIG_BOOTARGS		"root=/dev/mtdblock0 rw console=ttyBF0,57600"
+./include/configs/CCM.h:#undef	CONFIG_BOOTARGS
+./include/configs/ms7720se.h:#define CONFIG_BOOTARGS		"console=ttySC0,115200"
+./include/configs/smdkv210single.h.mmc:/*#define CONFIG_BOOTARGS    	"root=ramfs devfs=mount console=ttySA0,9600" */
+./include/configs/mx1ads.h:#define CONFIG_BOOTARGS		"root=/dev/msdk mem=48M"
+./include/configs/PLU405.h:#undef	CONFIG_BOOTARGS
+./include/configs/TOP860.h:#undef	CONFIG_BOOTARGS
+./include/configs/FLAGADM.h:#define CONFIG_BOOTARGS		"root=/dev/nfs rw ip=bootp"
+./include/configs/FLAGADM.h:#define CONFIG_BOOTARGS		"root=/dev/nfs rw ip=bootp panic=1"
+./include/configs/alpr.h:#undef	CONFIG_BOOTARGS
+./include/configs/AMX860.h:#undef CONFIG_BOOTARGS
+./include/configs/TQM8260.h:#undef	CONFIG_BOOTARGS
+./include/configs/CATcenter.h:#undef	CONFIG_BOOTARGS
+./include/configs/DASA_SIM.h:#undef	CONFIG_BOOTARGS
+./include/configs/trab.h:#define CONFIG_BOOTARGS		"console=ttyS0"
+./include/configs/TQM5200.h:#undef	CONFIG_BOOTARGS
+./include/configs/CPU86.h:#undef	CONFIG_BOOTARGS
+./include/configs/GENIETV.h:#define CONFIG_BOOTARGS		""
+./include/configs/MHPC.h:#undef	CONFIG_BOOTARGS
+./include/configs/smdkc110b.h:/*#define CONFIG_BOOTARGS    	"root=ramfs devfs=mount console=ttySA0,9600" */
+./include/configs/NETTA.h:#undef	CONFIG_BOOTARGS
+./include/configs/xupv2p.h:#define	CONFIG_BOOTARGS		"root=romfs"
+./include/configs/SM850.h:#undef	CONFIG_BOOTARGS
+./include/configs/hcu5.h:#undef	CONFIG_BOOTARGS
+./include/configs/hermes.h:#undef	CONFIG_BOOTARGS
+./include/configs/spieval.h:#undef	CONFIG_BOOTARGS
+./include/configs/PMC440.h:#undef	CONFIG_BOOTARGS
+./include/configs/csb272.h:#undef  CONFIG_BOOTARGS
+./include/configs/csb272.h:#undef	CONFIG_BOOTARGS
+./include/configs/stxgp3.h:#define CONFIG_BOOTARGS "root=/dev/nfs rw ip=any console=ttyS1,38400"
+./include/configs/motionpro.h:#undef CONFIG_BOOTARGS
+./include/configs/xsengine.h:#define CONFIG_BOOTARGS			"root=/dev/mtdblock2 rootfstype=jffs2 console=ttyS1,115200"
+./include/configs/mx1fs2.h:#define CONFIG_BOOTARGS	   "root=/dev/mtdblock4 console=ttySMX0,115200n8 rootfstype=jffs2"
+./include/configs/DP405.h:#undef	CONFIG_BOOTARGS
+./include/configs/WUH405.h:#undef	CONFIG_BOOTARGS
+./include/configs/ns9750dev.h:/*#define CONFIG_BOOTARGS	"root=ramfs devfs=mount console=ttySA0,9600" */
+./include/configs/TQM834x.h:#undef  CONFIG_BOOTARGS			/* the boot command will set bootargs */
+./include/configs/TQM834x.h:#undef	CONFIG_BOOTARGS
+./include/configs/v38b.h:#undef CONFIG_BOOTARGS
+./include/configs/mcu25.h:#undef	CONFIG_BOOTARGS
+./include/configs/MPC8540ADS.h:#undef  CONFIG_BOOTARGS		/* the boot command will set bootargs */
+./include/configs/v37.h:#undef	CONFIG_BOOTARGS
+./include/configs/MPC8555CDS.h:#undef  CONFIG_BOOTARGS           /* the boot command will set bootargs*/
+./include/configs/sbc8240.h:#undef CONFIG_BOOTARGS
+./include/configs/ms7722se.h:#define CONFIG_BOOTARGS		"console=ttySC0,115200 root=1f01"
+./include/configs/R360MPI.h:#undef	CONFIG_BOOTARGS
+./include/configs/sbc8349.h:#undef  CONFIG_BOOTARGS			/* the boot command will set bootargs */
+./include/configs/FPS860L.h:#undef	CONFIG_BOOTARGS
+./include/configs/jupiter.h:#undef	CONFIG_BOOTARGS
+./include/configs/c2mon.h:#undef	CONFIG_BOOTARGS
+./include/configs/P3G4.h:#undef	CONFIG_BOOTARGS
+./include/configs/ml300.h:#define CONFIG_BOOTARGS		"console=ttyS0,9600 ip=off " \
+./include/configs/MVBC_P.h:#define CONFIG_BOOTARGS		"root=/dev/ram ro rootfstype=squashfs"
+./include/configs/evb4510.h:/* #define CONFIG_BOOTARGS	"console=ttyS0,19200 initrd=0x100a0040,530K root=/dev/ram keepinitrd" */
+./include/configs/smdkc110n_mtd.h:/*#define CONFIG_BOOTARGS    	"root=ramfs devfs=mount console=ttySA0,9600" */
+./include/configs/SX1.h:#define CONFIG_BOOTARGS		"mem=16M console=ttyS0,115200n8 root=/dev/mtdblock3 rw"
+./include/configs/delta.h:#define CONFIG_BOOTARGS		"root=/dev/mtdblock2 rootfstype=cramfs console=ttyS0,115200"
+./include/configs/pb1x00.h:#undef	CONFIG_BOOTARGS
+./include/configs/at91sam9261ek.h:#define CONFIG_BOOTARGS		"console=ttyS0,115200 "			\
+./include/configs/at91sam9261ek.h:#define CONFIG_BOOTARGS		"console=ttyS0,115200 "			\
+./include/configs/pcs440ep.h:#undef	CONFIG_BOOTARGS
+./include/configs/xaeniax.h:#define CONFIG_BOOTARGS		"console=ttyS1,115200"
+./include/configs/IVML24.h:#define CONFIG_BOOTARGS		"root=/dev/nfs rw "			\
+./include/configs/ads5121.h:#undef  CONFIG_BOOTARGS			/* the boot command will set bootargs */
+./include/configs/pcu_e.h:#undef	CONFIG_BOOTARGS
+./include/configs/DB64360.h:#undef	CONFIG_BOOTARGS
+./include/configs/DB64360.h:#define CONFIG_BOOTARGS "console=ttyS0,115200"
+./include/configs/MIP405.h:#define CONFIG_BOOTARGS		"console=ttyS0,9600 root=/dev/hda5" /* boot arguments */
+./include/configs/HH405.h:#undef	CONFIG_BOOTARGS
+./include/configs/atstk1003.h:#define CONFIG_BOOTARGS							\
+./include/configs/gth2.h:#define CONFIG_BOOTARGS "panic=1"
+./include/configs/LANTEC.h:#undef	CONFIG_BOOTARGS
+./include/configs/Total5200.h:#undef	CONFIG_BOOTARGS
+./include/configs/scb9328.h:#define CONFIG_BOOTARGS	   "console=ttySMX0,115200n8 root=/dev/mtdblock3 rootfstype=jffs2 mtdparts=scb9328_flash:128k(U-boot)ro,128k(U-boot_env),1m(kernel),4m(root),4m(fs) eval_board=evk9328"
+./include/configs/purple.h:#undef	CONFIG_BOOTARGS
+./include/configs/at91sam9rlek.h:#define CONFIG_BOOTARGS		"console=ttyS0,115200 " \
+./include/configs/at91sam9rlek.h:#define CONFIG_BOOTARGS		"console=ttyS0,115200 " \
+./include/configs/impa7.h:#define CONFIG_BOOTARGS		"devfs=mount root=ramfs console=ttyS0,9600"
+./include/configs/smdkc110h.h:/*#define CONFIG_BOOTARGS    	"root=ramfs devfs=mount console=ttySA0,9600" */
+./include/configs/smmaco4.h:#undef	CONFIG_BOOTARGS
+./include/configs/smdkc110_mtd.h:/*#define CONFIG_BOOTARGS    	"root=ramfs devfs=mount console=ttySA0,9600" */
+./include/configs/smdk6400.h:/*#define CONFIG_BOOTARGS    	"root=ramfs devfs=mount console=ttySA0,9600" */
+./include/configs/smdkv210single.h.512mmc:/*#define CONFIG_BOOTARGS    	"root=ramfs devfs=mount console=ttySA0,9600" */
+./include/configs/uc101.h:#undef	CONFIG_BOOTARGS
+./include/configs/grsim.h:#undef	CONFIG_BOOTARGS
+./include/configs/at91cap9adk.h:#define CONFIG_BOOTARGS		"console=ttyS0,115200 "			\
+./include/configs/at91cap9adk.h:#define CONFIG_BOOTARGS		"console=ttyS0,115200 "			\
+./include/configs/debris.h:#define CONFIG_BOOTARGS \
+./include/configs/MPC8315ERDB.h:#undef CONFIG_BOOTARGS		/* the boot command will set bootargs */
+./include/configs/atngw100.h:#define CONFIG_BOOTARGS							\
+./include/configs/IPHASE4539.h:#define CONFIG_BOOTARGS		"root=/dev/ram rw"
+./include/configs/MPC8360EMDS.h:#undef	CONFIG_BOOTARGS		/* the boot command will set bootargs */
+./include/configs/PN62.h:#undef CONFIG_BOOTARGS
+./include/configs/MPC832XEMDS.h:#undef  CONFIG_BOOTARGS		/* the boot command will set bootargs */
+./include/configs/B2.h:#define CONFIG_BOOTARGS  "setenv bootargs root=/dev/ram ip=192.168.0.70:::::eth0:off \
+./include/configs/AmigaOneG3SE.h:#define CONFIG_BOOTARGS		"root=/dev/ram rw ramdisk_size=4096"
+./include/configs/integratorcp.h:#define CONFIG_BOOTARGS	"root=/dev/nfs nfsroot=<IP address>:/<exported rootfs>  mem=128M ip=dhcp netdev=27,0,0xfc800000,0xfc800010,eth0 video=clcdfb:0"
+./include/configs/integratorcp.h:#define CONFIG_BOOTARGS	"root=/dev/mtdblock2 mem=128M ip=dhcp netdev=27,0,0xfc800000,0xfc800010,eth0 video=clcdfb:0 console=ttyAMA0"
+./include/configs/quantum.h:#define CONFIG_BOOTARGS	 "root=/dev/ram rw"
+./include/configs/TQM885D.h:#undef	CONFIG_BOOTARGS
+./include/configs/MVBLUE.h:#define CONFIG_BOOTARGS			"root=/dev/mtdblock5 ro rootfstype=jffs2"
+./include/configs/TQM860M.h:#undef	CONFIG_BOOTARGS
+./include/configs/pleb2.h:#define CONFIG_BOOTARGS		"root=/dev/mtdblock2 prompt_ramdisk=0 load_ramdisk=1 console=ttyS0,115200"
+./include/configs/KUP4K.h:#undef	CONFIG_BOOTARGS
+./include/configs/QS850.h:#undef CONFIG_BOOTARGS		/* made by set_nfs of set_flash */
+./include/configs/rmu.h:#undef	CONFIG_BOOTARGS
+./include/configs/mgsuvd.h:#undef	CONFIG_BOOTARGS
+./include/configs/bf533-stamp.h:#define CONFIG_BOOTARGS		"root=/dev/mtdblock0 rw console=ttyBF0,57600"
+./include/configs/sh7763rdp.h:#define CONFIG_BOOTARGS         "console=ttySC2,115200 root=1f01"
+./include/configs/EVB64260.h:#undef	CONFIG_BOOTARGS
+./include/configs/pxa255_idp.h:#define CONFIG_BOOTARGS		"root=/dev/mtdblock2 rootfstype=cramfs console=ttyS0,115200"
+./include/configs/lart.h:#define CONFIG_BOOTARGS		"root=ramfs devfs=mount console=ttySA0,9600"
+./include/configs/ZPC1900.h:#define CONFIG_BOOTARGS		"root=/dev/nfs rw ip=:::::eth0:dhcp"
+./include/configs/ep7312.h:#define CONFIG_BOOTARGS		"devfs=mount root=ramfs console=ttyS0,9600"
+./include/configs/NSCU.h:#undef	CONFIG_BOOTARGS
+./include/configs/cm5200.h:#undef CONFIG_BOOTARGS
+./include/configs/cm4008.h:#define CONFIG_BOOTARGS		"mem=16M console=ttyAM0,115200"
+./include/configs/p3p440.h:#undef	CONFIG_BOOTARGS
+./include/configs/gr_xc3s_1500.h:#undef	CONFIG_BOOTARGS
+./include/configs/Adder.h:#define CONFIG_BOOTARGS		"root=/dev/mtdblock1 rw mtdparts=1M(ROM)ro,-(root)"
+./include/configs/bf537-stamp.h:#define CONFIG_BOOTARGS "root=/dev/mtdblock0 rw console=ttyBF0,57600"
+./include/configs/voiceblue.h:#undef  CONFIG_BOOTARGS		/* the boot command will set bootargs*/
+./include/configs/AP1000.h:#define CONFIG_BOOTARGS		"console=ttyS0,57600"
+./include/configs/atstk1006.h:#define CONFIG_BOOTARGS							\
+./include/configs/smdk6430.h:/*#define CONFIG_BOOTARGS    	"root=ramfs devfs=mount console=ttySA0,9600" */
+./include/configs/sbc8548.h:#undef	CONFIG_BOOTARGS		/* the boot command will set bootargs*/
+./include/configs/GEN860T.h:#undef	CONFIG_BOOTARGS
+./include/configs/integratorap.h:#define CONFIG_BOOTARGS		"root=/dev/mtdblock0 mem=32M console=ttyAM0 console=tty"
+./include/configs/Rattler.h:#define CONFIG_BOOTARGS		"root=/dev/mtdblock2 rw mtdparts=phys:1M(ROM)ro,-(root)"
+./include/configs/BAB7xx.h:#undef  CONFIG_BOOTARGS
+./include/configs/cogent_mpc8xx.h:#define CONFIG_BOOTARGS		"root=/dev/ram rw"
+./include/configs/SXNI855T.h:#define CONFIG_BOOTARGS		"root=/dev/ram ip=off"
+./include/configs/W7OLMC.h:#undef CONFIG_BOOTARGS
+./include/configs/ms7750se.h:#define CONFIG_BOOTARGS		"console=ttySC0,38400"
+./include/configs/sbc8641d.h:#undef  CONFIG_BOOTARGS		/* the boot command will set bootargs */
+./include/configs/atc.h:#undef	CONFIG_BOOTARGS
+./include/configs/RPXlite_DW.h:#undef	CONFIG_BOOTARGS
+./include/configs/XPEDITE1K.h:#define CONFIG_BOOTARGS		"root=/dev/hda1 "
+./include/configs/sc3.h:#undef	CONFIG_BOOTARGS
+./include/configs/sc3.h: * define CONFIG_BOOTARGS to the default kernel parameters. They will used if you don't
+./include/configs/sc3.h: #define CONFIG_BOOTARGS	"root=/dev/nfs rw ip=bootp nfsroot=/tftpboot/solidcard3re"
+./include/configs/sc3.h: #define CONFIG_BOOTARGS	"console=ttyS0,115200 root=/dev/nfs rw ip=bootp"
+./include/configs/smdk2450.h:/*#define CONFIG_BOOTARGS    	"root=ramfs devfs=mount console=ttySA0,9600" */
+./include/configs/EP88x.h:#define CONFIG_BOOTARGS		"root=/dev/mtdblock1 rw mtdparts=phys:2M(ROM)ro,-(root)"
+./include/configs/cogent_mpc8260.h:#define CONFIG_BOOTARGS		"root=/dev/ram rw"
+./include/configs/smdk2416.h:/*#define CONFIG_BOOTARGS    	"root=ramfs devfs=mount console=ttySA0,9600" */
+./include/configs/CPCI405AB.h:#undef	CONFIG_BOOTARGS
+./include/configs/RPXClassic.h:#undef	CONFIG_BOOTARGS
+./include/configs/sc520_cdp.h:#define CONFIG_BOOTARGS		"root=/dev/mtdblock0 console=ttyS0,9600"
+./include/configs/TQM855M.h:#undef	CONFIG_BOOTARGS
+./include/configs/RPXlite.h:#undef	CONFIG_BOOTARGS
+./include/configs/incaip.h:#undef	CONFIG_BOOTARGS
+./include/configs/IVMS8.h:#define CONFIG_BOOTARGS		"root=/dev/nfs rw "			\
+./include/configs/JSE.h: * CONFIG_BOOTARGS is the arguments passed to the Linux kernel to get
+./include/configs/JSE.h:#define CONFIG_BOOTARGS		"root=/dev/ram0 init=/linuxrc rw"
+./include/configs/stxxtc.h:#undef	CONFIG_BOOTARGS
+./include/configs/Sandpoint8240.h:#undef	CONFIG_BOOTARGS
+./include/configs/lubbock.h:#define CONFIG_BOOTARGS		"root=/dev/mtdblock2 rootfstype=cramfs console=ttyS0,115200"
+./include/configs/armadillo.h:#define CONFIG_BOOTARGS		"root=/dev/ram0 rootfstype=ext2 console=ttyAM0,115200"
+./include/configs/smdkc100.h:/*#define CONFIG_BOOTARGS    	"root=ramfs devfs=mount console=ttySA0,9600" */
+./include/configs/smdkc110d_mtd.h:/*#define CONFIG_BOOTARGS    	"root=ramfs devfs=mount console=ttySA0,9600" */
+./include/configs/TB5200.h:#undef	CONFIG_BOOTARGS
+./include/configs/PIP405.h:#define CONFIG_BOOTARGS		"console=ttyS0,9600 root=/dev/hda5" /* boot arguments */
+./include/configs/trizepsiv.h:#define CONFIG_BOOTARGS		"console=ttyS0,38400 ramdisk_size=12288"\
+./include/configs/VOM405.h:#undef	CONFIG_BOOTARGS
+./include/configs/lwmon.h:#undef	CONFIG_BOOTARGS
+./include/configs/MBX.h:#define CONFIG_BOOTARGS		"root=/dev/nfs rw "			\
+./include/configs/MPC8541CDS.h:#undef  CONFIG_BOOTARGS           /* the boot command will set bootargs*/
+./include/configs/ml401.h:#define	CONFIG_BOOTARGS		"root=romfs"
+./include/configs/omap5912osk.h:#define CONFIG_BOOTARGS	"mem=32M console=ttyS0,115200n8 noinitrd \
+./include/configs/sbc2410x.h:#define CONFIG_BOOTARGS		"console=ttySAC0 root=/dev/nfs " \
+./include/configs/AR405.h:#define CONFIG_BOOTARGS		"root=/dev/nfs "			\
+./include/configs/AR405.h:#define CONFIG_BOOTARGS		"root=/dev/hda1 "			\
+./include/configs/PM826.h:#undef	CONFIG_BOOTARGS
+./include/configs/MPC8560ADS.h:#undef  CONFIG_BOOTARGS		/* the boot command will set bootargs */
+./include/configs/omap730p2.h:#define CONFIG_BOOTARGS		   "mem=32M console=ttyS0,115200n8 noinitrd root=/dev/nfs rw ip=bootp"
+./include/configs/omap2420h4.h:#define CONFIG_BOOTARGS	         "mem=32M console=ttyS0,115200n8 noinitrd root=/dev/nfs rw nfsroot=128.247.77.158:/home/a0384864/wtbu/rootfs ip=dhcp"
+./include/configs/omap2420h4.h:#define CONFIG_BOOTARGS          "root=/dev/ram0 rw mem=32M console=ttyS0,115200n8 initrd=0x80600000,8M ramdisk_size=8192"
+./include/configs/gcplus.h:#define CONFIG_BOOTARGS		"console=ttySA0,38400n8 mtdparts=sa1100-flash:1m@0(zImage),3m@1m(ramdisk.gz),12m@4m(userfs) root=/dev/nfs ip=bootp"
+./include/configs/ASH405.h:#undef	CONFIG_BOOTARGS
+./include/configs/MPC8548CDS.h:#undef	CONFIG_BOOTARGS		/* the boot command will set bootargs*/
+./include/configs/TQM850L.h:#undef	CONFIG_BOOTARGS
+./include/configs/omap1610inn.h:#define CONFIG_BOOTARGS	"mem=32M console=ttyS0,115200n8 noinitrd \
+./include/configs/sorcery.h:#undef	CONFIG_BOOTARGS
+./include/configs/qemu-mips.h:#undef CONFIG_BOOTARGS
+./include/configs/CPU87.h:#undef	CONFIG_BOOTARGS
+./include/configs/kvme080.h:#define CONFIG_BOOTARGS \
+./include/configs/modnet50.h:#define CONFIG_BOOTARGS		"console=ttyS0,38400 initrd=0x100a0040,530K " \
+./include/configs/PPChameleonEVB.h:#undef	CONFIG_BOOTARGS
+./include/configs/o2dnt.h:#undef	CONFIG_BOOTARGS
+./include/configs/smdkv210single.h:/*#define CONFIG_BOOTARGS    	"root=ramfs devfs=mount console=ttySA0,9600" */
+./include/configs/smdkv210single.h:#define CONFIG_BOOTARGS		"console=ttySAC0,115200"
+./include/configs/davinci_sffsdr.h:#define CONFIG_BOOTARGS			\
+./include/configs/TQM823L.h:#undef	CONFIG_BOOTARGS
+./include/configs/sbc8560.h:#define CONFIG_BOOTARGS "root=/dev/nfs rw ip=dhcp console=ttyS0,9600"
+./include/configs/sbc8560.h:/*#define CONFIG_BOOTARGS      "root=/dev/ram rw console=ttyS0,115200"*/
+./include/configs/CRAYL1.h:#undef CONFIG_BOOTARGS
+./include/configs/QS823.h:#undef CONFIG_BOOTARGS		/* made by set_nfs of set_flash */
+./include/configs/r2dplus.h:#define CONFIG_BOOTARGS		"console=ttySC0,115200"
+./include/configs/IP860.h:#undef	CONFIG_BOOTARGS
+./include/configs/mpr2.h:#define CONFIG_BOOTARGS		"console=ttySC0,115200"
+./include/configs/smdk6410.h:/*#define CONFIG_BOOTARGS    	"root=ramfs devfs=mount console=ttySA0,9600" */
+./include/configs/MPC8641HPCN.h:#undef	CONFIG_BOOTARGS		/* the boot command will set bootargs */
+./include/configs/IAD210.h:#undef	CONFIG_BOOTARGS
+./include/configs/VOH405.h:#undef	CONFIG_BOOTARGS
+./include/configs/RBC823.h:#undef	CONFIG_BOOTARGS
+./include/configs/FPS850L.h:#undef	CONFIG_BOOTARGS
+./include/configs/cm41xx.h:#define CONFIG_BOOTARGS		"mem=32M console=ttyAM0,115200"
+./include/configs/QS860T.h:#undef CONFIG_BOOTARGS
+./include/configs/assabet.h:#define CONFIG_BOOTARGS		"console=ttySA0,115200n8 root=/dev/nfs ip=bootp"
+./include/configs/IceCube.h:#undef	CONFIG_BOOTARGS
+./include/configs/MPC8349EMDS.h:#undef  CONFIG_BOOTARGS			/* the boot command will set bootargs */
+./include/configs/smdkc110_ubi.h:#define CONFIG_BOOTARGS    	"console=ttySAC2,115200 ubi.mtd=4 " MTDPARTS_DEFAULT
+./include/configs/DU405.h:#undef	CONFIG_BOOTARGS
+./include/configs/FADS850SAR.h:#define CONFIG_BOOTARGS		" "
+./include/configs/Yukon8220.h:#define CONFIG_BOOTARGS		"root=/dev/ram rw"
+./include/configs/omap1510inn.h:#define CONFIG_BOOTARGS		"console=ttyS0,115200n8 noinitrd root=/dev/nfs ip=bootp"
+./include/configs/smdk2410.h:/*#define CONFIG_BOOTARGS	"root=ramfs devfs=mount console=ttySA0,9600" */
+./include/configs/innokom.h:/* #define CONFIG_BOOTARGS	"root=/dev/nfs ip=bootp console=ttyS0,19200" */
+./include/configs/innokom.h:#define CONFIG_BOOTARGS		"console=ttyS0,19200"
+./include/configs/barco.h:#define CONFIG_BOOTARGS "mem=32M"
+./include/configs/utx8245.h:#define CONFIG_BOOTARGS		"root=/dev/ram console=ttyS0,57600" /* RAMdisk */
+./include/configs/smdkc110ac.h:/*#define CONFIG_BOOTARGS    	"root=ramfs devfs=mount console=ttySA0,9600" */
+./include/configs/pf5200.h:#undef	CONFIG_BOOTARGS
+./include/configs/CPCI4052.h:#undef	CONFIG_BOOTARGS
+./include/configs/MPC8349ITX.h:#define CONFIG_BOOTARGS \
+./include/configs/dbau1x00.h:#undef	CONFIG_BOOTARGS
+./include/configs/versatile.h:#define CONFIG_BOOTARGS "root=/dev/nfs mem=128M ip=dhcp netdev=25,0,0xf1010000,0xf1010010,eth0"
+./include/configs/NX823.h:#define CONFIG_BOOTARGS		"ramdisk_size=8000 "\
+./include/configs/ZUMA.h:#undef	CONFIG_BOOTARGS
+./include/configs/ELPPC.h:#undef  CONFIG_BOOTARGS
+./include/configs/r7780mp.h:#define CONFIG_BOOTARGS		"console=ttySC0,115200"
+./include/configs/Alaska8220.h:#define CONFIG_BOOTARGS		"root=/dev/ram rw"
+./include/configs/CPCI2DP.h:#undef	CONFIG_BOOTARGS
+./include/configs/inka4x0.h:#undef	CONFIG_BOOTARGS
+./include/configs/IDS8247.h:#undef	CONFIG_BOOTARGS
+./include/configs/atstk1002.h:#define CONFIG_BOOTARGS							\
+./include/configs/HMI10.h:#undef	CONFIG_BOOTARGS
+./include/configs/smdkv210single_ubi.h:#define CONFIG_BOOTARGS    	"console=ttySAC2,115200 ubi.mtd=4 " MTDPARTS_DEFAULT
+./include/configs/virtlab2.h:#undef	CONFIG_BOOTARGS
+./include/configs/grsim_leon2.h:#undef	CONFIG_BOOTARGS
+./include/configs/PM520.h:#undef	CONFIG_BOOTARGS
+./include/configs/ISPAN.h:#define CONFIG_BOOTARGS		"root=/dev/ram rw"
+./include/configs/rsdproto.h:#define CONFIG_BOOTARGS		"devfs=mount root=ramfs"
+./include/configs/smdk6442.h:/*#define CONFIG_BOOTARGS    	"root=ramfs devfs=mount console=ttySA0,9600" */
+./include/configs/ixdp425.h:#define CONFIG_BOOTARGS         "root=/dev/mtdblock2 rootfstype=cramfs console=ttyS0,115200"
+./include/configs/ERIC.h:#define CONFIG_BOOTARGS		"console=ttyS0,115200 root=/dev/nfs "	\
+./include/configs/PM828.h:#undef	CONFIG_BOOTARGS
+./include/configs/GTH.h:#define CONFIG_BOOTARGS		"panic=1"
+./include/configs/GTH.h:#define CONFIG_BOOTARGS "panic=1 root=/dev/hda7"
+./include/configs/MPC8568MDS.h:#undef  CONFIG_BOOTARGS           /* the boot command will set bootargs*/
+./include/configs/ADCIOP.h:#undef	CONFIG_BOOTARGS
+./include/configs/CPCIISER4.h:#undef	CONFIG_BOOTARGS
+./include/configs/TQM866M.h:#undef	CONFIG_BOOTARGS
+./include/configs/HUB405.h:#undef	CONFIG_BOOTARGS
+./include/configs/linkstation.h:#define CONFIG_BOOTARGS		"root=/dev/sda1 console=ttyS1,57600 netconsole=@192.168.1.7/eth0,@192.168.1.1/00:50:BF:A4:59:71 rtc-rs5c372.probe=0,0x32 debug"
+./include/configs/linkstation.h:	"boothd=setenv bootargs " CONFIG_BOOTARGS ";bootm ${ldaddr} - 7f0000\0"	\
+./include/configs/ORSG.h:#undef	CONFIG_BOOTARGS
+./include/configs/EXBITGEN.h:#define CONFIG_BOOTARGS		"root=/dev/ram "  \
+./include/configs/TQM855L.h:#undef	CONFIG_BOOTARGS
+./include/configs/MigoR.h:#define CONFIG_BOOTARGS		"console=ttySC0,115200 root=1f01"
+./include/configs/cradle.h:#define CONFIG_BOOTARGS         "root=/dev/mtdblock2 console=ttyS0,115200"
+./include/configs/shannon.h:#define CONFIG_BOOTARGS		"root=ramfs devfs=mount console=ttySA0,115200"
+./include/configs/NC650.h:#undef	CONFIG_BOOTARGS
+./include/configs/svm_sc8xx.h:#undef	CONFIG_BOOTARGS
+./include/configs/netstar.h:#undef  CONFIG_BOOTARGS		/* the boot command will set bootargs*/
+./include/configs/CPCI405DT.h:#undef	CONFIG_BOOTARGS
+./include/configs/DU440.h:#undef	CONFIG_BOOTARGS
+./include/configs/smdkc100_256.h:/*#define CONFIG_BOOTARGS    	"root=ramfs devfs=mount console=ttySA0,9600" */
+./include/configs/apollon.h:# define	CONFIG_BOOTARGS "root=/dev/nfs rw mem=64M console=ttyS0,115200n8 ip=192.168.116.25:192.168.116.1:192.168.116.1:255.255.255.0:apollon:eth0:off nfsroot=/tftpboot/nfsroot profile=2"
+./include/configs/apollon.h:# define	CONFIG_BOOTARGS "root=/dev/nfs rw mem=128M console=ttyS0,115200n8 ip=192.168.116.25:192.168.116.1:192.168.116.1:255.255.255.0:apollon:eth0:off nfsroot=/tftpboot/nfsroot profile=2"
+./include/configs/davinci_schmoogie.h:#define CONFIG_BOOTARGS		"mem=56M console=ttyS0,115200n8 root=/dev/hda1 rw noinitrd ip=dhcp"
+./include/configs/wepep250.h:#define CONFIG_BOOTARGS    "root=/dev/mtdblock2 mem=32m console=ttyS01,115200n8"
+./include/configs/ELPT860.h:#undef	  CONFIG_BOOTARGS
+./include/configs/MPC8260ADS.h:#define CONFIG_BOOTARGS		"root=/dev/mtdblock2"
+./include/configs/omap1610h2.h:#define CONFIG_BOOTARGS	"console=ttyS0,115200n8 noinitrd root=/dev/nfs ip=dhcp"
+./include/configs/MPC8544DS.h:#undef	CONFIG_BOOTARGS		/* the boot command will set bootargs*/
+./include/configs/APC405.h:#undef	CONFIG_BOOTARGS
+./include/configs/smdkv210single.h.111021:/*#define CONFIG_BOOTARGS    	"root=ramfs devfs=mount console=ttySA0,9600" */
+./include/configs/TQM850M.h:#undef	CONFIG_BOOTARGS
+./include/configs/tb0229.h:#undef	CONFIG_BOOTARGS
+./include/configs/socrates.h:#undef	CONFIG_BOOTARGS		/* the boot command will set bootargs	*/
+./include/configs/TQM8272.h:#undef	CONFIG_BOOTARGS
+./include/configs/TQM823M.h:#undef	CONFIG_BOOTARGS
+./include/configs/FADS823.h:#define CONFIG_BOOTARGS		""
+./include/configs/csb472.h:#undef  CONFIG_BOOTARGS
+./include/configs/csb472.h:#undef	CONFIG_BOOTARGS
+./include/configs/mecp5200.h:#undef	CONFIG_BOOTARGS
+./include/configs/ATUM8548.h:#undef	CONFIG_BOOTARGS		/* the boot command will set bootargs*/
+./include/configs/KUP4X.h:#undef	CONFIG_BOOTARGS
+./include/configs/CMS700.h:#undef	CONFIG_BOOTARGS
+./include/configs/cobra5272.h:#define CONFIG_BOOTARGS		" "			/* default bootargs that are
+./include/configs/cpci5200.h:#undef	CONFIG_BOOTARGS
+./include/configs/davinci_dvevm.h:#define CONFIG_BOOTARGS		"mem=120M console=ttyS0,115200n8 root=/dev/hda1 rw noinitrd ip=dhcp"
+./include/configs/stxssa.h:#define CONFIG_BOOTARGS		"root=/dev/nfs rw ip=any console=ttyS1,$baudrate"
+./include/configs/stxssa.h:#undef	CONFIG_BOOTARGS		/* the boot command will set bootargs	*/
+./include/configs/NETPHONE.h:#undef	CONFIG_BOOTARGS
+./include/configs/munices.h:#undef	CONFIG_BOOTARGS
+./include/configs/PCI405.h:#undef	CONFIG_BOOTARGS
+./include/configs/smdk6442c.h:/*#define CONFIG_BOOTARGS    	"root=ramfs devfs=mount console=ttySA0,9600" */
+./include/configs/m501sk.h:#define CONFIG_BOOTARGS	"mem=32M console=ttyS0,115200 "	\
+./include/configs/PM856.h:#undef  CONFIG_BOOTARGS		/* the boot command will set bootargs */
+./include/configs/sc520_spunk.h:#define CONFIG_BOOTARGS		"root=/dev/mtdblock1 console=ttyS0,9600 " \
+./include/configs/DB64460.h:#undef	CONFIG_BOOTARGS
+./include/configs/DB64460.h:#define CONFIG_BOOTARGS "console=ttyS0,115200"
+./include/configs/CPCI750.h:#undef	CONFIG_BOOTARGS
+./include/configs/p3mx.h:#undef	CONFIG_BOOTARGS
+./include/configs/ESTEEM192E.h:#define CONFIG_BOOTARGS		"root=/dev/ram rw ramdisk=8192 "			\
+./include/configs/ep8248.h:#define CONFIG_BOOTARGS		"root=/dev/mtdblock1 rw mtdparts=phys:7M(root),-(root)ro"
+./include/configs/NETTA2.h:#undef	CONFIG_BOOTARGS
+./include/configs/gr_ep2s60.h:#undef	CONFIG_BOOTARGS
+./include/configs/csb226.h:#define CONFIG_BOOTARGS		"console=ttyS0,19200 ip=192.168.1.10,192.168.1.5,,255,255,255,0,csb root=/dev/nfs, ether=0,0x08000000,eth0"
+./include/configs/RRvision.h:#undef	CONFIG_BOOTARGS
+./include/configs/smdkv210vogue.h:/*#define CONFIG_BOOTARGS    	"root=ramfs devfs=mount console=ttySA0,9600" */
+./include/configs/PMC405.h:#undef	CONFIG_BOOTARGS
+./include/configs/hmi1001.h:#undef	CONFIG_BOOTARGS
+./include/configs/smdkv210single.h.nand_restore.sdboot:/*#define CONFIG_BOOTARGS    	"root=ramfs devfs=mount console=ttySA0,9600" */
+./include/configs/MVBLM7.h:#define CONFIG_BOOTARGS		"root=/dev/ram ro rootfstype=squashfs"
+./include/configs/ixdpg425.h:#undef	CONFIG_BOOTARGS
+./include/configs/logodl.h:/* #define CONFIG_BOOTARGS	"root=/dev/nfs ip=bootp console=ttyS0,19200" */
+./include/configs/logodl.h:#define CONFIG_BOOTARGS		"console=ttyS0,19200"
+./include/configs/MBX860T.h:#define CONFIG_BOOTARGS		" "
+./include/configs/SPD823TS.h:#define CONFIG_BOOTARGS		"root=/dev/nfs rw "			\
+./include/configs/MVS1.h:#define	CONFIG_BOOTARGS		"root=/dev/mtdblock2 rw"
+./include/configs/METROBOX.h:#define CONFIG_BOOTARGS	      "console=ttyS0,9600 root=/dev/nfs rw nfsroot=$serverip:/home/metrobox0 nfsaddrs=$ipaddr:::::eth0:none "
+./include/configs/sbc405.h:#undef CONFIG_BOOTARGS
+./include/configs/ICU862.h:#undef	CONFIG_BOOTARGS
+./include/configs/W7OLMG.h:#undef CONFIG_BOOTARGS
+./include/configs/MOUSSE.h:#define CONFIG_BOOTARGS      "console=ttyS0 root=/dev/nfs rw nfsroot=209.128.93.133:/boot nfsaddrs=209.128.93.133:209.128.93.138"
+./include/configs/dnp1110.h:#define CONFIG_BOOTARGS		"root=ramfs devfs=mount console=ttySA0,115200"
+./include/configs/G2000.h:#undef	CONFIG_BOOTARGS
+./include/configs/davinci_sonata.h:#define CONFIG_BOOTARGS		"mem=56M console=ttyS0,115200n8 root=/dev/hda1 rw noinitrd ip=dhcp"
+./include/configs/smdk6440.h://#define CONFIG_BOOTARGS    	"root=ramfs devfs=mount console=ttySA0,9600"
+./include/configs/cerf250.h:#define CONFIG_BOOTARGS		"root=/dev/mtdblock3 rootfstype=jffs2 console=ttyS0,38400"
+./include/configs/MPC837XEMDS.h:#undef CONFIG_BOOTARGS		/* the boot command will set bootargs */
+./include/configs/MPC8610HPCD.h:#undef	CONFIG_BOOTARGS		/* the boot command will set bootargs */
+./include/configs/TQM860L.h:#undef	CONFIG_BOOTARGS
+./include/configs/TQM85xx.h:#undef	CONFIG_BOOTARGS		/* the boot command will set bootargs	*/
+./include/configs/spc1920.h:#undef CONFIG_BOOTARGS
+./board/evb64260/local.h:/* #define CONFIG_BOOTARGS */
+./board/fads/fads.h:#undef CONFIG_BOOTARGS
+./board/esd/cpci750/local.h:/* #define CONFIG_BOOTARGS */
+./README:		CONFIG_BOOTARGS
+./README:		command. The value of CONFIG_BOOTARGS goes into the
+./tools/environment.c:#if defined(CONFIG_BOOTARGS)
+./tools/environment.c:	"bootargs="	CONFIG_BOOTARGS			"\0"
+./tools/env/fw_env.c:#if defined(CONFIG_BOOTARGS)
+./tools/env/fw_env.c:	"bootargs=" CONFIG_BOOTARGS "\0"
